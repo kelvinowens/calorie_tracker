@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calorie Tracker</title>
+  </head>
+  <body>
+    <h1>Your Food Entries</h1>
+    <ul>
+      {% for entry in entries %}
+      <li>{{ entry.name }} - {{ entry.calories }} cal</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
